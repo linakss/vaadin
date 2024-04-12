@@ -80,6 +80,10 @@
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
@@ -118,6 +122,7 @@
             <!-- Production mode is activated using -Pproduction -->
             <id>production</id>
             <dependencies>
+
                 <!-- Exclude development dependencies from production -->
                 <dependency>
                     <groupId>com.vaadin</groupId>
@@ -129,6 +134,9 @@
                         </exclusion>
                     </exclusions>
                 </dependency>
+
+
+
             </dependencies>
             <build>
                 <plugins>

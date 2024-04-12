@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Offline | Vaadin CRM</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: sans-serif;
+            color: #555;
+        }
+
+        .content {
+            width: 80%;
+        }
+
+        .offline-image {
+            width: 100%;
+            margin: 4em 0px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="content">
+    <img src="./images/offline.webp" alt="VaadinCRM is offline" class="offline-image"/>
+    <h1>О, олень, ты не в сети</h1>
+    <p>Ваше подключение к Интернету отключено. Вернитесь в Интернет, чтобы продолжить работу с Vaadin CRM.</p>
+</div>
+<script>
+    window.addEventListener('online', () => window.location.reload()); //Фрагмент JavaScript перезагружает страницу, если браузер обнаруживает, что она снова подключена к сети.
+</script>
+</body>
+</html>
